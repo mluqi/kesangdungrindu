@@ -1,5 +1,4 @@
-// components/HeroSection.tsx
-'use client'; // Karena menggunakan Swiper yang membutuhkan interaktivitas
+'use client'; 
 
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -10,7 +9,6 @@ import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import './styles/HeroSection.css'; // File CSS kustom
 
 interface SlideItem {
   id: number;
@@ -23,7 +21,6 @@ interface SlideItem {
 }
 
 const HeroSection: React.FC = () => {
-  // Data slides - bisa diganti dengan data dari API atau props
   const slides: SlideItem[] = [
     {
       id: 1,
